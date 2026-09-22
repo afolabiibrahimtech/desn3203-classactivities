@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <section>
+        <form action="index.js or index.cs or index.py" method="GET/POST" onsubmit="">
+            
+            <fieldset>
+                <Label for="firstName">First Name: </Label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br>
+                <Label for="lastName">Last Name: </Label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br>
+                
+                <legend>Personal Information</legend>
+                Male<input type="radio" id="male" />
+                Female<input type="radio" id="female" /> <br>
+
+                
+                <Label for="email">Email </Label>
+                <input type="text" id="email" name="email" placeholder="Enter email address" required><br><br>
+                Agree with the term? <input type="checkbox" id="terms"> <br>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Login</legend>
+                <Label for="username">Username: </Label>
+                <input type="text" id="username" name="username" placeholder="Enter email or User Id" required><br>
+                <Label for="password">Password: </Label>
+                <input type="text" id="password" name="password" placeholder="Enter password" required><br>
+
+                
+            </fieldset>
+            <fieldset>
+                <legend>Other Control</legend>
+                
+                <input type="file" id="user-file" name="uploaded_file">  <br>
+                <button type="button" id="btn" onclick="">Button</button>
+                <h4>Please write to us</h4>
+                <textarea cols="162" rows="15" id="feedback" placeholder="your comments please"></textarea>
+                <select>
+                    <optgroup label="Method of payment">
+                        <option>Credit Card</option>
+                        <option>Cash</option>
+                    </optgroup>
+                </select>
+
+            </fieldset>
+            
+
+            </fieldset>
+            
+            <button type="button" id="btn" onclick="">Submit Form</button>
+           
+
+
+
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
