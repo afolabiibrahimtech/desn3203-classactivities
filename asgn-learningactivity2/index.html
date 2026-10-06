@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        .banner {
+            display: block;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: rgb(58, 36, 3);
+            color: white
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        fieldset {
+            border: 2px solid white;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        select {
+            display: block;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        tr {
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="pagetop"></span>
+    <a style="color: white;" href="index.html#pagebottom">scroll down</a>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="img/VISION-combination-mark-and-slogan-with-yellow-box-.webp" alt="Tech Training Logo"
+                    class="site-logo" width="100" height="100">
+            </a>
+        </div>
+        <nav>
+            <li><a href="/">Media</a></li>
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#PriceTable">Prices</a></li>
+            <li><a href="index.html#Registration">Registration</a></li>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h1>TechTraining 2027 Registration Portal</h1>
+        </div>
+
+
+        <p id="About">Join us for <strong>YYC Tech & Design Summit 2026</strong>, happening on <strong>Saturday,
+                November 14</strong> at the
+            <a href="https://bmo-centre.com" target="_blank" style="color: white; text-decoration: underline;">BMO
+                Centre, Calgary</a>.
+            This one-day event brings together developers, designers, and creators for talks, hands-on workshops, and
+            networking with local industry
+            leaders. Whether you're a student or a seasoned professional, it's a <em> can't-miss </em> opportunity to
+            learn, connect, and get inspired. Seats are <em>limited</em>, so register before <strong>November 1</strong>
+            to secure your spot.
+        </p>
+
+        <img class="banner" src="img/tech image.jfif" alt="Tech Training Image" width="800" height="400">
+
+
+        <h2 id="PriceTable">Price Table</h2>
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>Pass Type</th>
+                    <th>Included Features</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+
+
+            <tbody>
+                <tr>
+                    <td>Student</td>
+                    <td>Access to all talks, digital resources, certificate of attendance (valid student ID required)
+                    </td>
+                    <td>$49</td>
+                </tr>
+                <tr>
+                    <td>General</td>
+                    <td>Access to all talks and workshops, lunch, certificate of attendance</td>
+                    <td>$129</td>
+                </tr>
+                <tr>
+                    <td>VIP</td>
+
+                    <td rowspan="2" style="vertical-align: middle;">
+                        Full access to all talks and workshops, catered lunch, premium seating, plus exclusive
+                        networking reception.
+                    </td>
+                    <td>$249</td>
+                </tr>
+                <tr>
+                    <td>Group (5+)</td>
+
+                    <td>$499</td>
+                </tr>
+            </tbody>
+
+
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Early Bird Registration Discount Ends Soon!</td>
+                    <td>Save 10%</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div>
+            <h2 id="Registeration">Registration Form</h2>
+            <form action="#" method="POST">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="403-555-1234"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required><br>
+
+                <fieldset>
+                    <legend>Select Your Pass</legend>
+
+                    <input type="radio" id="student" name="ticket" value="student" required>
+                    <label for="student">Student</label>
+
+                    <input type="radio" id="general" name="ticket" value="general">
+                    <label for="general">General</label>
+
+                    <input type="radio" id="vip" name="ticket" value="vip">
+                    <label for="vip">VIP </label>
+
+                    <input type="radio" id="group" name="ticket" value="group">
+                    <label for="group">Group (5+)</label>
+
+                    <input type="radio" id="earlybird" name="ticket" value="earlybird">
+                    <label for="earlybird">Early Bird</label>
+                </fieldset>
+
+                <label for="quantity">Number of Tickets</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" required>
+
+                <label for="workshop">Workshop Session</label>
+                <select name="workshop" required>
+                    <option value="">- Choose a session -</option>
+                    <option value="web-dev">Morning: Modern Web Development</option>
+                    <option value="ux-design">Morning: UX Design Fundamentals</option>
+                    <option value="cloud">Afternoon: Intro to Cloud Computing</option>
+                    <option value="ai-tools">Afternoon: AI Tools for Developers</option>
+                </select>
+
+                <input type="reset" value="Clear Form"><br>
+                <button type="submit">Register Now</button><br>
+            </Form>
+        </div>
+    </section>
+    <span id="pagebottom"></span>
+    <a style="color: white;" href="index.html#pagetop">scroll up</a>
+
+</body>
+
+</html>
