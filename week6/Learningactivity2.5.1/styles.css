@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+}
+
+#myPadding {
+
+ border: 5px solid;
+  border-color: black;
+  border-style: dashed;
+  padding: 20px;
+  margin: 350px;
+
+
+}
+h1{
+    color: blue;
+}
+.career{
+    font-style: italic;
+    color: aqua;
+}
+.orange-text{
+    color: orange;
+}
+.country{
+    color: yellow;
+}
